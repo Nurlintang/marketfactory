@@ -1,0 +1,65 @@
+/* CSS untuk halaman MarketMastery */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e; /* Latar belakang gelap */
+    margin: 0;
+    padding: 0;
+}
+
+/* Tampilan kontainer utama */
+.kontainer-1 {
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #2f3640; /* Warna lebih gelap untuk kontainer */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Bayangan lebih intens */
+    max-width: 90%; /* Lebar lebih besar */
+}
+
+/* Judul kontainer */
+.judul-kontainer-1 {
+    font-size: 26px;
+    color: #00aaff; /* Warna biru terang */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Layout kotak chart */
+.kontainer-1-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Tampilan individual chart box */
+.box-1 {
+    flex: 1;
+    background-color: #3c3c52; /* Warna lebih gelap untuk chart box */
+    border: 1px solid #00aaff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    height: 500px; /* Tinggi lebih besar untuk gambar chart */
+    min-width: 45%; /* Memperbesar lebar box */
+}
+
+/* Tampilan footer di bawah setiap chart */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #00aaff;
+}
+
+/* Responsive design untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+    .kontainer-1-2 {
+        flex-direction: column;
+    }
+
+    .box-1 {
+        margin-bottom: 20px;
+        height: 400px; /* Tinggi yang masih besar di layar kecil */
+    }
+}
